@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="container mx-auto border">
+      <div class="grid grid-cols-2 gap-5">
+        <!-- 1st side seat sec tion  -->
+        <div>
+          <div class="border border-red-500 mt-20 p-5">
+            <div>
+              <div class="my-4">
+                <h1>select your seat</h1>
+              </div>
+              <hr />
+              <div class="flex justify-between my-5">
+                <p class="flex items-center gap-2">
+                  <img src="/images/seat-gray.png" alt="" />Available
+                </p>
+
+                <p class="flex items-center gap-2">
+                  <img src="/images/seat-green-filled.png" alt="" />Selected
+                </p>
+              </div>
+              <hr />
+              <div class="flex justify-end my-5">
+                <img class="" src="/images/bus-logo.png" alt="" />
+              </div>
+            </div>
+
+            <!-- seat managment  -->
+            <div class="grid grid-cols-2 border border-red-500 gap-10">
+              <div class="grid grid-cols-1 border gap-5">
+                <div class="flex items-center gap-5">
+                  <p>A</p>
+                  <button class="btn w-20">A1</button>
+                  <button class="btn w-20">A2</button>
+                </div>
+                <div class="flex items-center gap-5">
+                  <p>B</p>
+                  <button class="btn w-20">B1</button>
+                  <button class="btn w-20">B2</button>
+                </div>
+                <div class="flex items-center gap-5">
+                  <p>C</p>
+                  <button class="btn w-20">C1</button>
+                  <button class="btn w-20">C2</button>
+                </div>
+                <div class="flex items-center gap-5">
+                  <p>D</p>
+                  <button class="btn w-20">D1</button>
+                  <button class="btn w-20">D2</button>
+                </div>
+                <div class="flex items-center gap-5">
+                  <p>E</p>
+                  <button class="btn w-20">E1</button>
+                  <button class="btn w-20">E2</button>
+                </div>
+                <div class="flex items-center gap-5">
+                  <p>F</p>
+                  <button class="btn w-20">F1</button>
+                  <button class="btn w-20">F2</button>
+                </div>
+                <div class="flex items-center gap-5">
+                  <p>G</p>
+                  <button class="btn w-20">G1</button>
+                  <button class="btn w-20">G2</button>
+                </div>
+                <div class="flex items-center gap-5">
+                  <p>H</p>
+                  <button class="btn w-20">H1</button>
+                  <button class="btn w-20">H2</button>
+                </div>
+                <div class="flex items-center gap-5">
+                  <p>I</p>
+                  <button class="btn w-20">I1</button>
+                  <button class="btn w-20">I2</button>
+                </div>
+                <div class="flex items-center gap-5">
+                  <p>J</p>
+                  <button class="btn w-20">J1</button>
+                  <button class="btn w-20">J2</button>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 border border-green-500 gap-5">
+                <div class="flex justify-end gap-5">
+                  <button class="btn w-20">A3</button>
+                  <button class="btn w-20">A4</button>
+                </div>
+                <div class="flex justify-end gap-5">
+                  <button class="btn w-20">B3</button>
+                  <button class="btn w-20">B4</button>
+                </div>
+                <div class="flex justify-end gap-5">
+                  <button class="btn w-20">C3</button>
+                  <button class="btn w-20">C4</button>
+                </div>
+                <div class="flex justify-end gap-5">
+                  <button class="btn w-20">D3</button>
+                  <button class="btn w-20">D4</button>
+                </div>
+                <div class="flex justify-end gap-5">
+                  <button class="btn w-20">E3</button>
+                  <button class="btn w-20">E4</button>
+                </div>
+                <div class="flex justify-end gap-5">
+                  <button class="btn w-20">F3</button>
+                  <button class="btn w-20">F4</button>
+                </div>
+                <div class="flex justify-end gap-5">
+                  <button class="btn w-20">G3</button>
+                  <button class="btn w-20">G4</button>
+                </div>
+                <div class="flex justify-end gap-5">
+                  <button class="btn w-20">H3</button>
+                  <button class="btn w-20">H4</button>
+                </div>
+                <div class="flex justify-end gap-5">
+                  <button class="btn w-20">I3</button>
+                  <button class="btn w-20">I4</button>
+                </div>
+                <div class="flex justify-end gap-5">
+                  <button class="btn w-20">J3</button>
+                  <button class="btn w-20">J4</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right side section form  -->
+        <div class="mt-20 border border-blue-700 p-5">
+          <div class="my-4"><h1>Select Your Seat</h1></div>
+          <hr />
+          <!-- grand total section  -->
+
+          <div class=" p-5 my-5 bg-zinc-100">
+            <div class="flex justify-between  my-4 font-bold text-xl">
+              <p>seat</p>
+              <p>class</p>
+              <p>Price</p>
+            </div>
+            <hr />
+            <div class="flex justify-between">
+              <p>C2</p>
+              <p>Economy</p>
+              <p>550</p>
+            </div>
+            <br />
+            <hr />
+            <div class="flex justify-between mt-2  font-bold text-xl">
+              <p>Total Price</p>
+              <p>BDT <span>0</span></p>
+            </div>
+            <div class="p-5 ">
+              <div class="join min-w-full">
+                <input
+                  class="input input-bordered join-item px-44"
+                  placeholder="Have any copupon?"
+                />
+                <button class="btn join-item rounded-r-full bg-green-400 text-white">Apply</button>
+              </div>
+              <div class="flex justify-between mt-2  font-bold text-xl">
+                <p>Grand Total</p>
+                <p>BDT <span>0</span></p>
+              </div>
+            </div>
+          </div>
+          <!-- form sec tion  -->
+          <div class="p-5">
+            <div class="mb-5">
+              <label class="font-bold" for="input">Passenger Name</label>
+            <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full mt-4" />
+            </div>
+            <div class="mb-5">
+              <label  class="font-bold" for="input">Phone Number</label>
+            <input type="text" placeholder="Enter your phone Number" class="input input-bordered w-full mt-4" />
+            </div>
+            <div class="mb-5">
+              <label class="font-bold" for="input">Email</label>
+            <input type="text" placeholder="Enter Your Email" class="input input-bordered w-full mt-4" />
+            </div>
+            
+
+          </div>
+          <button class="btn btn-wide w-full bg-green-400 text-white text-xl">Next</button>
+          <div class="mt-6 flex justify-between">
+            <a class="underline" href="">Terms & Condition</a>
+            <a class="underline" href="">Cancellation policicy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
