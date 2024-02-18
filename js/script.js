@@ -8,7 +8,8 @@ for (const seats of allSeat) {
   seats.addEventListener("click", function(){
     seats.disabled = true;
     
-    seats.classList.add('bg-green-400')
+seats.style.backgroundColor = 'green';
+seats.style.color = 'white';
 
     //  change available seat
     const availableSeat = document.getElementById('available-seat');
@@ -22,6 +23,9 @@ for (const seats of allSeat) {
     const currentSeatCount = parseInt(seatCount.innerText);
     const updatedSeatCount = currentSeatCount + 1;
     seatCount.innerText = updatedSeatCount;
+    if(updatedSeatCount >= 4){
+      thisbtn()
+    }
 
 
     
@@ -50,14 +54,6 @@ for (const seats of allSeat) {
 
 }
 
-// function disablebtn(){
-//   document.getElementsByTagName('button').disabled = true;
-  
-// }
-
-
- 
-
 const applybtn = document.getElementById('apply-btn');
 
 
@@ -82,16 +78,16 @@ applybtn.addEventListener("click", function(){
     document.getElementById("input-field").value = "";
     const inputContainer = document.getElementById('input-container');
     inputContainer.classList.add('hidden');
-    
-
   }
-  
-
   else{
     alert('invalid coupon')
     document.getElementById("input-field").value = "";
   }
 })
+    
+
+  
+
 
 const nextbtn = document.getElementById('next-button');
 
@@ -103,11 +99,11 @@ nextbtn.addEventListener('click', function(){
     document.getElementById('grand-total').innerText = 0;
     document.getElementById('text-container').innerText = "";
     document.getElementById("input-field").value = "";
+  })
     
     
 
     
-})
 
     
    
