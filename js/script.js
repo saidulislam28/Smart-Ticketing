@@ -6,6 +6,8 @@ for (const seats of allSeat) {
   
   // console.log(seats);
   seats.addEventListener("click", function(){
+    seats.disabled = true;
+    
     seats.classList.add('bg-green-400')
 
     //  change available seat
@@ -48,7 +50,10 @@ for (const seats of allSeat) {
 
 }
 
-
+// function disablebtn(){
+//   document.getElementsByTagName('button').disabled = true;
+  
+// }
 
 
  
@@ -66,6 +71,8 @@ applybtn.addEventListener("click", function(){
     const grandTotal = document.getElementById('grand-total');
     grandTotal.innerText = afterDiscount;
     document.getElementById("input-field").value = "";
+    const inputContainer = document.getElementById('input-container');
+    inputContainer.classList.add('hidden');
   }
   else if(couponText == "Couple 20"){
     const discountAmount = totalPrice * 0.2;
@@ -73,6 +80,10 @@ applybtn.addEventListener("click", function(){
     const grandTotal = document.getElementById('grand-total');
     grandTotal.innerText = afterDiscount;
     document.getElementById("input-field").value = "";
+    const inputContainer = document.getElementById('input-container');
+    inputContainer.classList.add('hidden');
+    
+
   }
   
 
@@ -81,6 +92,23 @@ applybtn.addEventListener("click", function(){
     document.getElementById("input-field").value = "";
   }
 })
+
+const nextbtn = document.getElementById('next-button');
+
+nextbtn.addEventListener('click', function(){
+  
+  const containerSuccess = document.getElementById('container-success');
+    containerSuccess.classList.remove('hidden');
+    document.getElementById('total-taka').innerText = 0;
+    document.getElementById('grand-total').innerText = 0;
+    document.getElementById('text-container').innerText = "";
+    document.getElementById("input-field").value = "";
+    
+    
+
+    
+})
+
     
    
     
