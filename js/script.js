@@ -2,16 +2,34 @@ let totalPrice = 0;
 const allSeat = document.getElementsByClassName('common-button');
 
 for (const seats of allSeat) {
+  
+  
   // console.log(seats);
   seats.addEventListener("click", function(){
     seats.classList.add('bg-green-400')
 
+    //  change available seat
+    const availableSeat = document.getElementById('available-seat');
+    const currentavailableSeat = parseInt(availableSeat.innerText);
+    const updateSeat = currentavailableSeat - 1;
+    availableSeat.innerText = updateSeat;
+
+
+    // change seat amount 
+    const seatCount = document.getElementById('seat-count');
+    const currentSeatCount = parseInt(seatCount.innerText);
+    const updatedSeatCount = currentSeatCount + 1;
+    seatCount.innerText = updatedSeatCount;
+
+
+    
+
+
   //  get the text 
 
   const text= seats.innerText;
-  // console.log(text);
+ 
   const textContainer = document.getElementById('text-container');
-  // console.log(textContainer);
   const p = document.createElement("p");
   p.innerText = text;
   textContainer.appendChild(p);
@@ -24,9 +42,13 @@ for (const seats of allSeat) {
 
  totalPrice += ticketPrice;
  document.getElementById("total-taka").innerText = totalPrice;
+ document.getElementById("grand-total").innerText = totalPrice;
+ 
 })
 
 }
+
+
 
 
  
