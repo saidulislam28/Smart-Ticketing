@@ -34,11 +34,26 @@ seats.style.color = 'white';
   //  get the text 
 
   const text= seats.innerText;
- 
+
+
   const textContainer = document.getElementById('text-container');
-  const p = document.createElement("p");
-  p.innerText = text;
-  textContainer.appendChild(p);
+  
+  const div = document.createElement('div');
+
+  const p1 = document.createElement('p');
+  p1.innerText = text;
+  const p2 = document.createElement('p');
+  p2.innerText = 'Economy';
+  const p3 = document.createElement('p');
+  p3.innerText = '550';
+  
+  div.appendChild(p1);
+  div.appendChild(p2);
+  div.appendChild(p3);
+  div.classList.add("my-div")
+
+  textContainer.appendChild(div)
+
 
   // ticket total totalPrice 
   const ticket = document.getElementById('ticket-price').innerText;
@@ -89,17 +104,30 @@ applybtn.addEventListener("click", function(){
   
 
 
-const nextbtn = document.getElementById('next-button');
-
-nextbtn.addEventListener('click', function(){
+  const nextbtn = document.getElementById('next-button');
   
-  const containerSuccess = document.getElementById('container-success');
-    containerSuccess.classList.remove('hidden');
-    document.getElementById('total-taka').innerText = 0;
-    document.getElementById('grand-total').innerText = 0;
-    document.getElementById('text-container').innerText = "";
-    document.getElementById("input-field").value = "";
-  })
+    nextbtn.addEventListener('click', function(){
+    
+  
+      document.getElementById('total-taka').innerText = 0;
+      document.getElementById('grand-total').innerText = 0;
+      document.getElementById('text-container').innerText = "";
+      document.getElementById("input-field").value = "";
+    })
+   
+  
+
+
+ 
+  
+
+
+
+
+
+
+
+
     
     
 
