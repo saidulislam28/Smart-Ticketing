@@ -113,6 +113,11 @@ applybtn.addEventListener("click", function(){
       document.getElementById('grand-total').innerText = 0;
       document.getElementById('text-container').innerText = "";
       document.getElementById("input-field").value = "";
+      document.getElementById('seat-count').innerText = 0;
+      document.getElementById('available-seat').innerText = 40;
+
+
+
     })
    
   
